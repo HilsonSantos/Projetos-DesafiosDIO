@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a2cb299-9643-4758-b31c-0f9941fd20da" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/carregar_dados.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scriptssql/sqlserver/createtable/carga_clientesmsgs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carregar_dados.py" beforeDir="false" afterPath="$PROJECT_DIR$/carregar_dados.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,16 +107,5 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/carregar_dados.py</url>
-          <line>150</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

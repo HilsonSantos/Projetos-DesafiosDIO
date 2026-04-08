@@ -7,7 +7,7 @@ from dbconnection.sqlserver import SQLServer
 
 warnings.filterwarnings("ignore", category=SAWarning)
 
-GROQ_API_KEY = "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"
+# GROQ_API_KEY = "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"
 GOOGLE_API_KEY = "AIzaSyCBjz4FdneC5cTw3YlJPTZvXXKUhSfn9AI"
 
 class CarregarDados(object):
