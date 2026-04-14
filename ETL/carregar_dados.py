@@ -7,8 +7,7 @@ from dbconnection.sqlserver import SQLServer
 
 warnings.filterwarnings("ignore", category=SAWarning)
 
-# GROQ_API_KEY = "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"
-GOOGLE_API_KEY = "AIzaSyBpmCfoJAkA5dWQ8LMutXh6bOxfhTqpfLE"
+GOOGLE_API_KEY = "Inclua aqui a chame da API"
 
 class ProcessoETL(object):
     def __init__(self, path_txt, path_xlsx):
@@ -22,7 +21,8 @@ class ProcessoETL(object):
         script SQL armazenados em um diretório.
         :return:
         """
-        # PEGA OS ARQUIVOS *.TXT
+        # Pega os arquivos *.txt no diretório "scriptssql\sqlserver\createtable\" de criação da tabelas no DW e
+        # joga em uma lista.
         files_txt = os.listdir(self.path_txt)
 
         # Percorre a lista com todos os arquivos em txt e cria a tabela no banco
@@ -36,6 +36,11 @@ class ProcessoETL(object):
             db.createtable(query)
 
     def carregar_tabelas(self):
+        """
+        Essa função tem como objetivo automatizar a carga dos dados nas tabelas do banco de dados a partir de arquivos de
+        xlsx no diretório "dados-excel\".
+        :return:
+        """
         db = SQLServer()
         files_xlsx = os.listdir(self.path_xlsx)
         table_name = None

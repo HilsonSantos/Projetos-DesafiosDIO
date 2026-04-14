@@ -7,10 +7,6 @@
     <list default="true" id="6a2cb299-9643-4758-b31c-0f9941fd20da" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/carregar_dados.py" beforeDir="false" afterPath="$PROJECT_DIR$/carregar_dados.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbconnection/oracle.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbconnection/postgresql.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scriptssql/postgresql/CargaVendas" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
