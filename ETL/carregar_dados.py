@@ -8,15 +8,21 @@ from dbconnection.sqlserver import SQLServer
 warnings.filterwarnings("ignore", category=SAWarning)
 
 # GROQ_API_KEY = "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"
-GOOGLE_API_KEY = "AIzaSyCBjz4FdneC5cTw3YlJPTZvXXKUhSfn9AI"
+GOOGLE_API_KEY = "AIzaSyBpmCfoJAkA5dWQ8LMutXh6bOxfhTqpfLE"
 
-class CarregarDados(object):
+class ProcessoETL(object):
     def __init__(self, path_txt, path_xlsx):
         self.path_txt = path_txt
         self.path_xlsx = path_xlsx
         self.db = SQLServer()
 
     def criar_tabelas(self):
+        """
+        Essa função tem como objetivo automatizar a criação de tabelas no banco de dados a partir de arquivos de
+        script SQL armazenados em um diretório.
+        :return:
+        """
+        # PEGA OS ARQUIVOS *.TXT
         files_txt = os.listdir(self.path_txt)
 
         # Percorre a lista com todos os arquivos em txt e cria a tabela no banco
@@ -154,8 +160,8 @@ class CarregarDados(object):
             print(f"Vendedor {vendedor_id} teve atingimento de {atingimento}%")
         client = genai.Client(api_key=GOOGLE_API_KEY)
         response = client.models.generate_content(
-            # model="gemini-2.5-flash",
-            model="gemini-3.1-flash-lite-preview",
+            model="gemini-2.5-flash",
+            # model="gemini-3.1-flash-lite-preview",
             contents="Em poucas palavras, o resultado do atingimento de cada cliente entre as vendas e meta, qual seria a análise?",
         )
         print(response.text)
